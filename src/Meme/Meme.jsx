@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export const Meme = () => {
     const fetchMeme = async () => {
@@ -6,6 +6,10 @@ export const Meme = () => {
         const data = await res.json();
         console.log(data);
     }
+
+    useEffect(() => {
+        fetchMeme();
+    }, []);
 
     return (
         <div>Meme</div>
