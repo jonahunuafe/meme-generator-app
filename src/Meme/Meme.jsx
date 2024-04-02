@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import styles from "./meme.module.css"
 
@@ -8,7 +8,7 @@ export const Meme = () => {
     const [memeIndex, setMemeIndex] = useState(0);
     const [captions, setCaptions] = useState([]);
 
-    const history = useHistory();
+   const history = useNavigate();
 
     const updateCaption = (e, index) => {
         const text = e.target.value || "";
