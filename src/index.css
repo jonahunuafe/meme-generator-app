@@ -4,7 +4,7 @@ body {
       'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* background-image: url('./bg.jpg'); */
+    /* background-image: url('./bg.jpg');  */
     /* color: white; */
 }
   
@@ -56,7 +56,6 @@ h1 {
         margin-bottom: 1.2rem;
     }
     
-
     input {
         padding: 10px;
         width: 80%;
