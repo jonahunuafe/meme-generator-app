@@ -8,6 +8,19 @@ export const Meme = () => {
   const [memeIndex, setMemeIndex] = useState(0);
   const [captions, setCaptions] = useState([]);
 
+  const updateCaption = (e, index) => {  //index of input, i index of what we are mapping
+    const text = e.target.value || "";
+    setCaptions(
+      captions.map((c, i) => {
+        if(index === i) {
+          return text
+        } else {
+          return c;
+        }
+      })
+    )
+  };
+
   //function to shuffle memes
   const shuffleMemes = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -40,6 +53,11 @@ export const Meme = () => {
       memes.length ? 
       <div className={styles.container}>
         <button onClick={() => setMemeIndex(memeIndex + 1)} className={styles.skip}>Skip</button>
+        {
+          captions.map((c, index) => (
+            <input onChange={(e) => updateCaption(e, index)} key={index}  />
+          ))
+        }
         <img src={memes[memeIndex].url} />
       </div> : <></>
   );
