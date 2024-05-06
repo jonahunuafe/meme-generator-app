@@ -77,12 +77,12 @@ export const Meme = () => {
 
   return (
     memes.length ? 
-    <div className={styles.container}>
+    <div className="memeContainer">
       <button onClick={generateMeme} className={styles.skip}>Generate</button>
       <button onClick={() => setMemeIndex(memeIndex + 1)} className={styles.skip}>Skip</button>
       {
         captions.map((c, index) => (
-          <input onChange={(e) => updateCaption(e, index)} key={index}  />
+          <input onChange={(e) => updateCaption(e, index)} key={index} type="text" />
         ))
       }
       <img src={memes[memeIndex].url} alt="meme" />

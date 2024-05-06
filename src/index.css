@@ -9,66 +9,83 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.memeContainer {
+    width: 90%;
+    margin: auto;
+}
   
 button {
     cursor: pointer;
-    display: block;
-    width: 350px;
-    padding: 10px;
+    width: 100%;
+    padding: 1rem;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 0.25rem;
 }
 
 img {
-    max-width: 500px;
-    max-height: 500px;
+    width: 100%;
+    height: 100%;
     margin: auto;
-    margin-top: 50px;
-    display: block;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     box-shadow: 0px 0px 10px black;
 }
 
 input {
     box-sizing: border-box;
-    display: block;
-    padding: 10px;
-    width: 350px;
+    padding: 0.8rem;
+    width: 100%;
     margin: auto;
-    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid #E5E5CB;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
 }
 
 h1 {
     text-align: center;
-    font-size: 50px;
-    text-shadow: 0px 0px 5px black;
+    font-size: 2rem;
 }
 
-@media(max-width: 768px) {
-    button {
+h1 .spanM {
+    color: #0A6847;
+}
+
+h1 .memeSpan {
+    color: #FB8B24;
+}
+
+h1 .spanC {
+    color: #211C6A;
+}
+
+@media(min-width: 768px) {
+    /* button {
         width: 85%;
         padding: 0.85rem;
         margin: auto;
         margin-bottom: 1.2rem;
-    }
+    } */
     
-    input {
+    /* input {
         padding: 10px;
         width: 80%;
         margin: auto;
         margin-bottom: 2rem;
-    }
+    } */
 
-    h1 {
+    /* h1 {
         text-align: center;
         font-size: 2rem;
-    }
+    } */
 
-    img {
+    /* img {
         width: 90%;
         height: 100%;
         margin: auto;
-    }
+    } */
 }

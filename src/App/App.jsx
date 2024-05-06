@@ -10,7 +10,10 @@ export const App = () => {
 
   return (
     <div>
-      <h1>Meme Creator</h1>
+      <h1>
+        <span className="spanM">M</span><span className="memeSpan">eme</span> 
+        <span className="spanC"> C</span><span className="memeSpan">reator</span>
+      </h1>
       <RouterProvider router={router} />
     </div>
   );
