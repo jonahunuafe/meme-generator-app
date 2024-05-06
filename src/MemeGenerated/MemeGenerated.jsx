@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useClipboard } from 'use-clipboard-copy';
 
+import classes from "../MemeGenerated/styles.module.css"
+
 export const MemeGenerated = () => {
    const [copied, setCopied] = useState(false);
    const navigate = useNavigate();
@@ -16,10 +18,10 @@ export const MemeGenerated = () => {
    };
 
   return (
-      <div style={{textAlign: "center"}}>
-         <button onClick={() => navigate("/")}>Make more memes</button>
+      <div className={classes.memeGeneratedContainer}>
+         <button onClick={() => navigate("/")} className={classes.home}>Make more memes</button>
          { url && <img src={url} alt="meme" /> }
-         <button onClick={copyLink}>{ copied ? "Link copied!" : "Copy link"}</button>
+         <button onClick={copyLink} className={classes.copy}>{ copied ? "Link copied!" : "Copy link"}</button>
       </div>
   );
 }
