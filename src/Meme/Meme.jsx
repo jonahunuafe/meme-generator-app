@@ -72,14 +72,13 @@ export const Meme = () => {
   useEffect(() => {
     if(memes.length) {
       setCaptions(Array(memes[memeIndex].box_count).fill(""));
-
     }
   }, [memeIndex, memes])
 
   return (
     memes.length ? 
     <div className={styles.container}>
-      <button onClick={generateMeme} className={styles.skip}>Generrate</button>
+      <button onClick={generateMeme} className={styles.skip}>Generate</button>
       <button onClick={() => setMemeIndex(memeIndex + 1)} className={styles.skip}>Skip</button>
       {
         captions.map((c, index) => (
