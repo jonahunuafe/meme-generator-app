@@ -29,6 +29,13 @@ export const Meme = () => {
     fetchMeme();
   }, []);
 
+  useEffect(() => {
+    if(memes.length) {
+      setCaptions(Array(memes[memeIndex].box_count).fill(""));
+
+    }
+  }, [memeIndex, memes])
+
   return (
       memes.length ? 
       <div className={styles.container}>
