@@ -10,6 +10,7 @@ export const App = () => {
 
   return (
     <div>
+      <h1>Meme Creator</h1>
       <RouterProvider router={router} />
     </div>
   );
