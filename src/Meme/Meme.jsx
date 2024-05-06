@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 import styles from "./meme.module.css"
 
@@ -86,6 +86,12 @@ export const Meme = () => {
         ))
       }
       <img src={memes[memeIndex].url} alt="meme" />
+      <p className="author">
+        <Link to="https://www.linkedin.com/in/jonahunuafe" 
+          target={'_blank'}
+        > Coded by: Jonah Unuafe
+        </Link>
+      </p>
     </div> : <></>
   );
 }
