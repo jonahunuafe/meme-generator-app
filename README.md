@@ -31,12 +31,14 @@ Users should be able to:
 
 ### Links
 
+- [Github]()
+- [Live URL]()
+
 ## My process
 
 ### Built with
 
 ## Author
-- Source code - [Github]()
-- Twitter - [@jonahunuafe]()
-- Linkedin - [jonahunuafe]()
+- Twitter - [@jonahunuafe](https://www.twitter.com/jonahunuafe)
+- Linkedin - [jonahunuafe](https://www.linkedin.com/in/jonahunuafe)
 
