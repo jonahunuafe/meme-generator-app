@@ -26,6 +26,9 @@ Users should be able to:
 
 ### Screenshot
 
+![](./public/meme-1.png)
+![](./public/meme-2.png)
+
 ### Links
 
 ## My process
