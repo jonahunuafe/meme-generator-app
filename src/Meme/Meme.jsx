@@ -8,7 +8,6 @@ export const Meme = () => {
   const [memes, setMemes] = useState([]);
   const [memeIndex, setMemeIndex] = useState(0);
   const [captions, setCaptions] = useState([]);
-
   const navigate = useNavigate();
 
   function navigateHandler(urlLink) {
