@@ -1,6 +1,6 @@
 # Meme Generation App
 
-![]()
+
 
 ## Table of contents
 
@@ -31,8 +31,7 @@ Users should be able to:
 
 ### Links
 
-- [Github]()
-- [Live URL]()
+- Source Code [Github](https://github.com/jonahunuafe/meme-generator-app)
 
 ## My process
 
