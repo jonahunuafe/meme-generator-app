@@ -1,6 +1,4 @@
-# Meme Generation App
-
-
+# Meme Generator App
 
 ## Table of contents
 
@@ -36,6 +34,10 @@ Users should be able to:
 ## My process
 
 ### Built with
+- Semantic HTML5 markup
+- CSS custom properties
+- JavaScript
+- React
 
 ## Author
 - Twitter - [@jonahunuafe](https://www.twitter.com/jonahunuafe)
